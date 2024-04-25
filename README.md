@@ -12,7 +12,7 @@
 
 
 
-##SetUp 
+## SetUp 
 
 1) Have docker demon running 
 2) run the command  docker-compose up --build     
