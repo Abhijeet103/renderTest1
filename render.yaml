@@ -1,24 +1,19 @@
-version: '3.8'
-
 services:
-  mongodb:
+  - name: mongodb
     image: mongo
     ports:
-      - "27017:27017"
+      - 27017:27017
     volumes:
-      - mongodb_data:/data/db
+      - name: mongodb_data
+        path: /data/db
 
-  java_app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    depends_on:
-      - mongodb
-    environment:
+  - name: java_app
+    buildCommand: docker build -t your-java-app .
+    startCommand: docker run -p 8080:8080 your-java-app
+    envVars:
       SPRING_DATA_MONGODB_HOST: mongodb
-      SPRING_DATA_MONGODB_PORT: 27017
+      SPRING_DATA_MONGODB_PORT: "27017"
+    envVarsFrom:
+      - name: mongodb
     ports:
-      - "8080:8080"
-
-volumes:
-  mongodb_data:
+      - 8080
