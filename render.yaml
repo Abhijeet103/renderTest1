@@ -1,5 +1,5 @@
 services:
-  - type : Background workers
+  - type : worker
     name: mongodb
     image: mongo
     ports:
