@@ -1,5 +1,6 @@
 services:
-  - name: mongodb
+  - type : database 
+    name: mongodb
     image: mongo
     ports:
       - 27017:27017
