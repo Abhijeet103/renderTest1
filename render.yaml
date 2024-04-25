@@ -1,5 +1,6 @@
 services:
-  - name: mongodb
+  - type: mongodb
+    name: mongodb
     image: mongo
     ports:
       - 27017:27017
@@ -7,13 +8,14 @@ services:
       - name: mongodb_data
         path: /data/db
 
-  - name: java_app
+  - type: web
+    name: java_app
     buildCommand: docker build -t your-java-app .
     startCommand: docker run -p 8080:8080 your-java-app
     envVars:
       SPRING_DATA_MONGODB_HOST: mongodb
       SPRING_DATA_MONGODB_PORT: "27017"
     envVarsFrom:
-      - name: mongodb
+      - mongodb
     ports:
       - 8080
