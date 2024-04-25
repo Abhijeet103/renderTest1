@@ -2,7 +2,7 @@
 
 1) simple get API which get all the Training centers , if none present in the DataBase then return empty list 
  2) Post API which post Training Center data 
-3) All specified Validaions like email , phone  ,Not null  data memebers etc 
+3) All specified Validations like email , phone  ,Not null  data memebers etc 
 4) Unit Test with Mock MVC 
 5) dockerized 
 6) swagger UI is attached 
