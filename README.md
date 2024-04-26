@@ -5,7 +5,8 @@
 3) All specified Validations like email , phone  ,Not null  data memebers etc 
 4) Unit Test with Mock MVC 
 5) dockerized 
-6) swagger UI is attached 
+6) swagger UI is attached
+7) Filter  with city  and student capacity is implemented 
 
 ## Unit Test 
 ![image](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/593ad915-a67e-4163-8b9a-8434450bb0ea)
@@ -19,3 +20,4 @@
 3) server will  start at port 8080
 4) use  http://localhost:8080/swagger-ui/index.html  for swagger UI
 5) for get and post use localhost:8080/trainingCenter
+6) for filter in get use localhost:8080/trainingCenter?studentCapacity=50&city=delhi
