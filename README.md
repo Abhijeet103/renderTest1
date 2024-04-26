@@ -74,11 +74,11 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
 
 
   ## Get Request with filter example 2
-  * Request
+* Request
 
     ![s5](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/bdc740de-3e5a-4033-a00f-a60b530b1ac5)
 
-  * Response
+* Response
 
     ![s6](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/901d3ddc-39a9-43ec-b2c8-d8b30669ff46)
 
@@ -108,12 +108,12 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
 
   ## Post Request wih invalid  payload missing Address
 
-  *Request 
+  * Request 
 
   ![s11](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/d7f28c15-f540-488d-8d60-6f8646884fa9)
 
   
-*Response
+* Response
 
 ![s12](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/3bc241c9-5f6a-4e6b-a4e8-fce3132fc8f7)
 
