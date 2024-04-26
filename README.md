@@ -43,7 +43,7 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
 }
 
 
-# ScrenShots 
+# ScreenShots 
 
 ## Get Request without filter  
 * Request
