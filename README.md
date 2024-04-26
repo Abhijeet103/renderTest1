@@ -48,11 +48,22 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
 ## Get Request without filter  
 * Request
   
-![image](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/612fb249-9a17-4e3a-b6c3-3dd3b5f53e23)
+  ![s1](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/8d401720-6245-4fef-a3fb-f950164f4e9b)
 
 * Response
 
-![image](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/1148badb-5e5b-47b8-aa3c-7468a088a56f)
+  ![s2](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/22293648-793a-4c43-a042-3bbf49cef8ba)
+
+
+## Get Request with filter example 1
+* Request
+
+  ![s3](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/a1e2a6ce-70d0-4af3-9419-e0b5f9a92e59)
+
+* Response
+
+  ![s4](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/7d4bbd3c-03da-4cf6-be31-d6d13daf192c)
+
 
 
 
