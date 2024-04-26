@@ -22,8 +22,18 @@ public class Service {
         return entity;
     }
 
-    public List<TrainingCenter> getAllTrainingCenter()
-    {
-        return  repo.findAll();
+        public List<TrainingCenter> getAllTrainingCenter(String city, Integer  studentCapacity) {
+        if (city != null && studentCapacity != null) {
+            return repo.findByAddressCityAndStudentCapacity(city, studentCapacity);
+        } else if (city != null) {
+            return repo.findByAddressCity(city);
+        } else if (studentCapacity != null) {
+            return repo.findByStudentCapacity(studentCapacity);
+        } else {
+            return repo.findAll();
+        }
+
     }
+
+
 }

@@ -5,7 +5,7 @@ FROM openjdk:17-alpine
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY target/demo-0.0.1-SNAPSHOT.jar /app/your-application.jar
+COPY target/demo-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # Define entry point to run your application
-ENTRYPOINT ["java", "-jar", "your-application.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]

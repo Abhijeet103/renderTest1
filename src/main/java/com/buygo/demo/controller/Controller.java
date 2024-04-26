@@ -1,17 +1,16 @@
-package com.buygo.demo;
+package com.buygo.demo.controller;
 
 
+import com.buygo.demo.entity.Address;
 import com.buygo.demo.entity.TrainingCenter;
 import com.buygo.demo.exceptions.InvalidRequestBodyException;
 import com.buygo.demo.services.Service;
+import jakarta.annotation.Nullable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.config.EnableMongoAuditing;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -42,11 +41,13 @@ public class Controller {
         return service.createTrainingCenter(trainingCenter);
     }
 
-
     @GetMapping("/trainingCenter")
-    List<TrainingCenter> getAllTrainingCenter()
+    List<TrainingCenter> getAllTrainingCenter(@RequestParam(required = false) String city , @RequestParam(required = false)  Integer  studentCapacity)
     {
-        return service.getAllTrainingCenter();
+        return service.getAllTrainingCenter(city  , studentCapacity);
     }
+
+
+
 
 }
