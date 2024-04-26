@@ -3,7 +3,7 @@
 1) simple get API ,  which get all the Training centers , if none present in the DataBase then return empty list
 2) Filter  with any parameter is implemented , usage of invalid parameter for filtering will result in a bad request
 3) Post API which post Training Center data 
-4) All specified Validations like email , phone  , Not null constrinat for some   data members etc .  
+4) All specified Validations like email , phone  , Not null constraint  for some   data members etc .  
 5) Unit Test with Mock MVC 
 6) dockerized 
 7) swagger UI is attached
@@ -25,9 +25,9 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
 4) use  http://localhost:8080/swagger-ui/index.html  for swagger UI
 
 ## Usage
-5) use localhost:8080/trainingCenter  endpoint for get and post request  
-6) for filter in get use localhost:8080/trainingCenter?studentCapacity=50&city=delhi
-7) Sample Post payload  :
+1) use localhost:8080/trainingCenter  endpoint for get and post request  
+2) for filter in get use localhost:8080/trainingCenter?studentCapacity=50&city=delhi
+3) Sample Post payload  :
    {
     "centerName" : "test1" ,
     "centerCode" : "123456789012" ,
@@ -41,6 +41,14 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
     "phoneNumber" : "1234567890" ,  
     "studentCapacity" :500    
 }
+
+
+
+
+
+
+
+
 
 
 # ScreenShots 
