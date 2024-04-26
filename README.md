@@ -75,6 +75,17 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
     ![s6](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/901d3ddc-39a9-43ec-b2c8-d8b30669ff46)
 
 
+## Get Request ith invalid filter 
+* Request
+
+  ![s7](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/bbe1296b-e916-4ca7-a16a-15a85ac58f95)
+
+* Response
+
+  ![s8](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/c27c56e0-3c63-43c6-b215-2267804b759d)
+
+
+
     
 
 
