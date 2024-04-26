@@ -18,7 +18,7 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
 
 
 ## Set Up 
-
+1) git clone https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha.git
 1) Have docker demon running 
 2) run the command  docker-compose up --build     
 3) server will  start at port 8080
