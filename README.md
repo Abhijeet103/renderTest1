@@ -28,6 +28,7 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
 1) use localhost:8080/trainingCenter  endpoint for get and post request  
 2) for filter in get use localhost:8080/trainingCenter?studentCapacity=50&city=delhi
 3) Sample Post payload  :
+   
    {
     "centerName" : "test1" ,
     "centerCode" : "123456789012" ,
@@ -52,6 +53,8 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
 
 
 # ScreenShots 
+
+
 
 ## Get Request without filter  
 * Request
