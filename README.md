@@ -17,7 +17,7 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
 
 
 
-## SetUp 
+## Set Up 
 
 1) Have docker demon running 
 2) run the command  docker-compose up --build     
@@ -52,7 +52,7 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
 
 
 
-# ScreenShots 
+# Screen Shots 
 
 
 
