@@ -42,7 +42,7 @@ public class Controller {
     }
 
     @GetMapping("/trainingCenter")
-    List<TrainingCenter> getAllTrainingCenter(@RequestParam(required = false) Map<String  , String> filter) throws InvalidRequestBodyException {
+    List<TrainingCenter> getAllTrainingCenter(@RequestParam Map<String  , String> filter) throws InvalidRequestBodyException {
         if(!validatedFilter(filter))
         {
             throw new InvalidRequestBodyException("Invalid filer parameter , allowed filter parameters are : centerCode, phoneNumber, state, pinCode, centerName, studentCapacity, contactEmail, city");

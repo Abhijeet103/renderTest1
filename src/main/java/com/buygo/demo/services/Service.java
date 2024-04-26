@@ -44,10 +44,5 @@ public class Service {
         return List.copyOf(intersection);
     }
 
-    @FunctionalInterface
-    private interface RepositoryMethodCaller {
-        List<TrainingCenter> call(String param);
-    }
-
 
 }
