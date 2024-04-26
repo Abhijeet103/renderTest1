@@ -75,7 +75,7 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
     ![s6](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/901d3ddc-39a9-43ec-b2c8-d8b30669ff46)
 
 
-## Get Request ith invalid filter 
+## Get Request with invalid filter 
 * Request
 
   ![s7](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/bbe1296b-e916-4ca7-a16a-15a85ac58f95)
@@ -85,8 +85,39 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
   ![s8](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/c27c56e0-3c63-43c6-b215-2267804b759d)
 
 
+  ## Post Request
 
+  * Request
+
+    ![s9](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/d3247c72-96b2-4482-9653-794a4c24cb48)
+
+
+  * Response  
+
+
+   ![s10](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/08965b83-189f-45bf-b869-747a1bafb1ed)
+
+
+  ## Post Request wih invalid  payload missing Address
+
+  *Request 
+
+  ![s11](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/d7f28c15-f540-488d-8d60-6f8646884fa9)
+
+  
+*Response
+
+![s12](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/3bc241c9-5f6a-4e6b-a4e8-fce3132fc8f7)
+
+  ## Post Request wih invalid  payload invalid email
+
+* Request
+  
+![s13](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/be805fcb-2b50-44d5-865f-46049159d70a)
+
+* Response
     
+![s14](https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha/assets/93581505/1eac4501-2746-426f-8806-8e40b782f03a)
 
 
 
