@@ -19,10 +19,11 @@ Java  , Springboot  , SpringBoot validation  , spring data Mongo ,  MongoDb  , J
 
 ## Set Up 
 1) git clone https://github.com/Abhijeet103/Backend_Traini8_Abhijeet_Jha.git
-1) Have docker demon running 
-2) run the command  docker-compose up --build     
-3) server will  start at port 8080
-4) use  http://localhost:8080/swagger-ui/index.html  for swagger UI
+2) Have docker demon running
+3) run docker build -t traini8 .
+4) run the command  docker-compose up --build     
+5) server will  start at port 8080
+6) use  http://localhost:8080/swagger-ui/index.html  for swagger UI
 
 ## Usage
 1) use localhost:8080/trainingCenter  endpoint for get and post request  
