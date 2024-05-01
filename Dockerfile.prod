@@ -1,0 +1,36 @@
+# Use Ubuntu as the base image
+FROM ubuntu:latest
+
+# Avoid warnings by switching to noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install prerequisites
+RUN apt-get update && \
+    apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common \
+    gnupg-agent
+
+# Install Docker
+RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
+    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" && \
+    apt-get update && \
+    apt-get install -y docker-ce docker-ce-cli containerd.io
+
+# Install Docker Compose
+RUN curl -L "https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && \
+    chmod +x /usr/local/bin/docker-compose
+
+# Copy all files in the current directory to the container's workspace
+COPY . /workspace
+
+# Set the working directory to the workspace
+WORKDIR /workspace
+
+# This command will be executed when the container starts. Note that running
+# Docker Compose in this way requires the Docker daemon to be running and
+# properly configured inside the container. This setup is non-trivial and
+# may require the container to be run in privileged mode.
+CMD ["docker-compose", "up", "--build"]
