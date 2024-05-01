@@ -1,5 +1,7 @@
 FROM mongo:latest
 
+
+RUN sudo systemctl start mongod
 # Create the MongoDB data directory (might not be necessary as the mongo image takes care of this)
 RUN mkdir -p /data/db
 
