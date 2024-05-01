@@ -1,23 +1,11 @@
-FROM mongo:latest
+conver this docker file to use mongo db in the above way  : # Use official OpenJDK 17 as base image
+FROM openjdk:17-oracle
 
-
-RUN sudo systemctl start mongod
-# Create the MongoDB data directory (might not be necessary as the mongo image takes care of this)
-RUN mkdir -p /data/db
-
-# Expose the default MongoDB port
-EXPOSE 27017
-
-# Use a second stage to copy the Spring Boot application
-FROM openjdk:17-oracle as application
-
-# Set working directory for Spring Boot app
+# Set working directory
 WORKDIR /app
 
+# Copy the JAR file into the container
 COPY target/demo-0.0.1-SNAPSHOT.jar /app/app.jar
 
-# Expose the port on which your Spring Boot application runs
-EXPOSE 8080
-
-# Define command to run your application
+# Define entry point to run your application
 ENTRYPOINT ["java", "-jar", "app.jar"]
