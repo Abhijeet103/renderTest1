@@ -1,8 +1,6 @@
 # Use Docker's official Docker-in-Docker image as the base
 FROM docker:dind
 
-# Avoid warnings by switching to noninteractive
-ENV DEBIAN_FRONTEND=noninteractive
 
 # Install Docker Compose
 RUN apk add --no-cache py-pip python3-dev libffi-dev openssl-dev gcc libc-dev rust cargo make && \
